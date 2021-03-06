@@ -1,0 +1,27 @@
+body {
+    font-family: $fontFamilyPrimary;
+    font-size: $fontSize;
+    color: $black;
+    line-height: 1.6;
+    font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    //font-family: $fontFamilyHeadings;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+i {
+    transition: opacity $transition;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.6;
+    }
+}
