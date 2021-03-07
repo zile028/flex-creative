@@ -30,7 +30,7 @@
         }
         ul {
             li {
-                display: inline-block;
+                //display: inline-block;
                 margin-left: 70px;
                 transition: transform $transition;
                 &:first-child {
@@ -362,6 +362,178 @@ footer {
         }
     }
 }
-// RESPONSIVE
+/**************
+    RESPONSIVE
+***************/
 @media (max-width: 767px) {
+    .about,
+    .works,
+    .teams,
+    .servicies,
+    .gallery,
+    .contact {
+        padding: 20px 0;
+    }
+
+    .header {
+        height: 100vh;
+        nav {
+            flex-direction: column;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+                width: 100%;
+                li {
+                    margin: 0;
+                    a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        hgroup {
+            div {
+                h1 {
+                    font-size: 3.5rem;
+                }
+            }
+        }
+    }
+    /**************
+        ABOUT
+    ***************/
+    .about {
+        .container {
+            flex-direction: column;
+            div {
+                padding-right: 0;
+                h2 {
+                    margin-bottom: 25px;
+                }
+                p {
+                    margin: 10px 0;
+                }
+            }
+        }
+        img {
+            margin-top: 20px;
+        }
+    }
+    /**************
+        WORKS
+    ***************/
+    .works {
+        .container {
+            flex-wrap: wrap;
+            div {
+                flex: 0 0 48%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    /**************
+        TEAMS
+    ***************/
+    .teams {
+        .wrap {
+            flex-direction: column;
+            width: 100%;
+            &:nth-child(odd),
+            &:nth-child(even) {
+                align-self: flex-start;
+                .text {
+                    order: 1;
+                    text-align: left;
+                    padding-right: 0px;
+                    padding-left: 0px;
+                    align-items: flex-start;
+                }
+                hr {
+                    margin: 20px 0;
+                    transform: translateX(0px);
+                }
+                .image {
+                    order: 2;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+            }
+            hr {
+                width: 100%;
+            }
+            .image {
+                flex: 0 0 100%;
+            }
+        }
+    }
+    /**************
+        SERVICIES
+    ***************/
+    .servicies {
+        .container {
+            flex-direction: column;
+        }
+        hgroup {
+            margin-bottom: 20px;
+        }
+    }
+    /**************
+        GALLERY
+    ***************/
+    .gallery {
+        header {
+            &::after {
+                width: 50%;
+            }
+        }
+        article {
+            padding: 25px 0;
+            .wraper {
+                flex: 0 0 100%;
+            }
+        }
+    }
+    /**************
+        CONTACT
+    ***************/
+    .contact {
+        .container {
+            flex-direction: column;
+            form {
+                flex: 0 0 100%;
+                padding-right: 0;
+                textarea {
+                    margin-bottom: 20px;
+                }
+            }
+            img {
+                margin-top: 20px;
+            }
+        }
+    }
+    /**************
+        FOOTER
+    ***************/
+    footer {
+        .top,
+        .copy {
+            padding: 20px 0;
+        }
+        .top {
+            p {
+                margin-top: 10px;
+            }
+        }
+        .copy {
+            flex-direction: column;
+            text-align: center;
+            ul {
+                margin-top: 15px;
+                padding-right: 0;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
 }

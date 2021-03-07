@@ -96,6 +96,18 @@ h6 {
 }
 
 /**************
+    RESPONSIVE
+***************/
+@media (max-width: 767px) {
+  .title h2 {
+    font-size: 2.5rem;
+  }
+  .title h4 {
+    font-size: 1.1rem;
+  }
+}
+
+/**************
     HEADER
 ***************/
 .header {
@@ -139,7 +151,6 @@ h6 {
 }
 
 .header nav ul li {
-  display: inline-block;
   margin-left: 70px;
   -webkit-transition: -webkit-transform 0.4s ease;
   transition: -webkit-transform 0.4s ease;
@@ -688,5 +699,200 @@ footer .copy ul li:first-child {
 footer .copy ul li i {
   color: #f20f97;
   font-size: 1.3rem;
+}
+
+/**************
+    RESPONSIVE
+***************/
+@media (max-width: 767px) {
+  .about,
+  .works,
+  .teams,
+  .servicies,
+  .gallery,
+  .contact {
+    padding: 20px 0;
+  }
+  .header {
+    height: 100vh;
+  }
+  .header nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .header nav ul li {
+    margin: 0;
+  }
+  .header nav ul li a {
+    font-size: 1rem;
+  }
+  .header hgroup div h1 {
+    font-size: 3.5rem;
+  }
+  /**************
+        ABOUT
+    ***************/
+  .about .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .container div {
+    padding-right: 0;
+  }
+  .about .container div h2 {
+    margin-bottom: 25px;
+  }
+  .about .container div p {
+    margin: 10px 0;
+  }
+  .about img {
+    margin-top: 20px;
+  }
+  /**************
+        WORKS
+    ***************/
+  .works .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .works .container div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 48%;
+            flex: 0 0 48%;
+    margin-bottom: 20px;
+  }
+  /**************
+        TEAMS
+    ***************/
+  .teams .wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .teams .wrap:nth-child(odd), .teams .wrap:nth-child(even) {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .teams .wrap:nth-child(odd) .text, .teams .wrap:nth-child(even) .text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: left;
+    padding-right: 0px;
+    padding-left: 0px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .teams .wrap:nth-child(odd) hr, .teams .wrap:nth-child(even) hr {
+    margin: 20px 0;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  .teams .wrap:nth-child(odd) .image, .teams .wrap:nth-child(even) .image {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .teams .wrap hr {
+    width: 100%;
+  }
+  .teams .wrap .image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  /**************
+        SERVICIES
+    ***************/
+  .servicies .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .servicies hgroup {
+    margin-bottom: 20px;
+  }
+  /**************
+        GALLERY
+    ***************/
+  .gallery header::after {
+    width: 50%;
+  }
+  .gallery article {
+    padding: 25px 0;
+  }
+  .gallery article .wraper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  /**************
+        CONTACT
+    ***************/
+  .contact .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .container form {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    padding-right: 0;
+  }
+  .contact .container form textarea {
+    margin-bottom: 20px;
+  }
+  .contact .container img {
+    margin-top: 20px;
+  }
+  /**************
+        FOOTER
+    ***************/
+  footer .top,
+  footer .copy {
+    padding: 20px 0;
+  }
+  footer .top p {
+    margin-top: 10px;
+  }
+  footer .copy {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  footer .copy ul {
+    margin-top: 15px;
+    padding-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
