@@ -32,12 +32,17 @@
             li {
                 display: inline-block;
                 margin-left: 70px;
+                transition: transform $transition;
                 &:first-child {
                     margin-left: 0;
                 }
                 a {
                     text-transform: uppercase;
                     font-size: 1rem;
+                }
+                &:hover {
+                    transform: scale(1.3);
+                    color: white;
                 }
             }
         }
@@ -89,24 +94,7 @@
                 margin: 25px 0;
             }
             button {
-                background: none;
-                height: 50px;
-                border: 1px solid $black;
-                padding: 0 30px;
-                font-size: 1rem;
-                font-weight: 500;
-                border-radius: 25px;
-                cursor: pointer;
-                transition: background-color $transition;
-                i {
-                    transition: transform $transition;
-                }
-                &:hover {
-                    background-color: $gray;
-                    & > i {
-                        transform: translateX(20px);
-                    }
-                }
+                @include btn($moveArrow: 20px, $px: 30px);
             }
         }
     }
@@ -283,6 +271,93 @@
                 background: rgba($pink, 0.7);
                 padding: 10px;
                 color: $white;
+            }
+        }
+    }
+}
+/**************
+    CONTACT
+***************/
+.contact {
+    padding: $py;
+    .container {
+        display: flex;
+        form {
+            flex: 0 0 65%;
+            padding-right: 60px;
+            align-self: center;
+            input,
+            textarea {
+                padding: 15px;
+                width: 100%;
+                font-family: $fontFamilyPrimary;
+                font-size: 1.2rem;
+                border: 1px solid rgba($gray, 0.4);
+            }
+            input {
+                margin-bottom: 20px;
+            }
+            textarea {
+                margin-bottom: 40px;
+                height: 260px;
+                resize: none;
+            }
+            button {
+                @include btn($moveArrow: 40px, $px: 50px);
+            }
+        }
+        img {
+            @include imgBasic();
+            width: 100%;
+        }
+    }
+}
+/**************
+    FOOTER
+***************/
+footer {
+    background-color: rgba($gray, 0.4);
+    .top {
+        padding: $py;
+        background-color: $white;
+        text-align: center;
+        h3 {
+            color: $pink;
+            font-size: 1.5rem;
+        }
+        p {
+            font-weight: 700;
+            margin-top: 25px;
+        }
+    }
+    .copy {
+        padding: $py;
+        display: flex;
+        justify-content: space-between;
+        p {
+            font-size: 1rem;
+            font-weight: 400;
+            i {
+                color: $pink;
+                margin-left: 10px;
+            }
+            a {
+                text-transform: uppercase;
+            }
+        }
+        ul {
+            padding-right: 290px;
+            li {
+                display: inline-block;
+                margin-left: 50px;
+                &:first-child {
+                    margin-left: 0px;
+                }
+                i {
+                    @extend .social;
+                    color: $pink;
+                    font-size: 1.3rem;
+                }
             }
         }
     }

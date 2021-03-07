@@ -1,13 +1,23 @@
-@mixin btn($bgColor, $borderColor, $fontColor) {
-    padding: 15px 40px;
-    background: $bgColor;
-    border: 1px solid $borderColor;
-    color: $fontColor;
+@mixin btn($moveArrow, $px) {
+    background: none;
+    height: 50px;
+    border: 1px solid $black;
+    padding: 0 $px;
     font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 25px;
     cursor: pointer;
+    transition: background-color $transition;
+    i {
+        transition: transform $transition;
+    }
+    &:hover {
+        background-color: $gray;
+        border: 1px solid $gray;
+        & > i {
+            transform: translateX($moveArrow);
+        }
+    }
 }
 @mixin imgBasic() {
     border-radius: 40px;
