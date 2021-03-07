@@ -293,4 +293,119 @@ h6 {
   font-weight: 700;
   font-size: 0.85rem;
 }
+
+/**************
+    TEAMS
+***************/
+.teams {
+  padding: 50px 0;
+}
+
+.teams .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.teams .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+}
+
+.teams .wrap:nth-child(odd) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.teams .wrap:nth-child(odd) .text {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  text-align: right;
+  padding-right: 20px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.teams .wrap:nth-child(odd) hr {
+  margin: 20px 0;
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+}
+
+.teams .wrap:nth-child(odd) .image {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.teams .wrap:nth-child(even) {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.teams .wrap:nth-child(even) .text {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  text-align: left;
+  padding-left: 20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.teams .wrap:nth-child(even) hr {
+  margin: 20px 0;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+}
+
+.teams .wrap:nth-child(even) .image {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.teams .wrap .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.teams .wrap hr {
+  border: 1px solid #f20f97;
+  width: 460px;
+}
+
+.teams .wrap .image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 330px;
+          flex: 0 0 330px;
+}
+
+.teams h4 {
+  font-size: 1.1rem;
+}
+
+.teams img {
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
