@@ -151,6 +151,7 @@ h6 {
 }
 
 .header nav ul li {
+  display: inline-block;
   margin-left: 70px;
   -webkit-transition: -webkit-transform 0.4s ease;
   transition: -webkit-transform 0.4s ease;

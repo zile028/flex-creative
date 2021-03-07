@@ -30,7 +30,7 @@
         }
         ul {
             li {
-                //display: inline-block;
+                display: inline-block;
                 margin-left: 70px;
                 transition: transform $transition;
                 &:first-child {
