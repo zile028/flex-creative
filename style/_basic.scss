@@ -30,7 +30,6 @@ h6 {
     h2 {
         font-size: 3rem;
         font-weight: 700;
-        margin-bottom: 50px;
     }
     h4 {
         font-weight: 700;
@@ -49,6 +48,12 @@ h6 {
 }
 .borderBottom {
     border-bottom: 2px solid $gray;
+}
+.centerAbsolut {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .social {
     transition: opacity $transition;

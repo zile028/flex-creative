@@ -55,7 +55,6 @@ h6 {
 .title h2 {
   font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 50px;
 }
 
 .title h4 {
@@ -76,6 +75,14 @@ h6 {
 
 .borderBottom {
   border-bottom: 2px solid gray;
+}
+
+.centerAbsolut, .gallery article .wraper h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .social {
@@ -212,6 +219,10 @@ h6 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.about .container div h2 {
+  margin-bottom: 50px;
 }
 
 .about .container div p {
@@ -407,5 +418,120 @@ h6 {
 
 .teams img {
   width: 100%;
+}
+
+/**************
+    SERVICIES
+***************/
+.servicies {
+  padding: 50px 0;
+}
+
+.servicies .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.servicies div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+.servicies .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.servicies h3 {
+  color: #f20f97;
+  font-size: 1.5rem;
+}
+
+.servicies img {
+  border-radius: 40px;
+  -webkit-box-shadow: 0 0 30px 5px gray;
+          box-shadow: 0 0 30px 5px gray;
+  width: 100%;
+}
+
+/**************
+    GALLERY
+***************/
+.gallery {
+  padding: 50px 0 0 0;
+}
+
+.gallery header {
+  margin-bottom: 50px;
+}
+
+.gallery header h2 {
+  margin-bottom: 25px;
+}
+
+.gallery header::after {
+  width: 350px;
+}
+
+.gallery article {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+}
+
+.gallery article .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gallery article .wraper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 23%;
+          flex: 0 0 23%;
+  min-width: 320px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.gallery article .wraper:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.gallery article .wraper img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery article .wraper h4 {
+  background: rgba(242, 15, 151, 0.7);
+  padding: 10px;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
